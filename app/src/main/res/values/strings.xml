@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cool LogIn</string>
+    <string name="todo">TODO</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">LogIn</string>
+    <string name="do_not_remember_password">Do not remember password?</string>
+    <string name="do_not_have_an_accont">Do not have an accont?</string>
+    <string name="signin_with_facebook">signin with facebook</string>
+    <string name="or">or</string>
+</resources>
