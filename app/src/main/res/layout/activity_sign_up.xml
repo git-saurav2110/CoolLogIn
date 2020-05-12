@@ -27,7 +27,7 @@
         android:id="@+id/icon"
         android:layout_width="90dp"
         android:layout_height="92dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="4dp"
         android:contentDescription="@string/todo"
         android:src="@drawable/instagram"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,75 +35,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/user_name"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
-        android:background="@drawable/et_bg"
-        android:hint="@string/email_address"
-        android:inputType="textEmailAddress"
-        android:padding="16dp"
-        android:textColorHint="@color/login_form_details"
-        app:layout_constraintEnd_toStartOf="@id/guideline_right"
-        app:layout_constraintStart_toStartOf="@id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@+id/icon"
-
-        android:autofillHints="" tools:targetApi="o"/>
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toStartOf="@id/guideline_right"
-        app:layout_constraintStart_toStartOf="@id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@+id/user_name"
-        android:background="@drawable/et_bg"
-        android:hint="@string/password"
-        android:textColorHint="@color/login_form_details"
-        android:drawableEnd="@drawable/eye"
-        android:padding="16dp"
-        android:autofillHints="" tools:targetApi="o"/>
-
-    <Button
-        android:id="@+id/login"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/login"
-        android:textAllCaps="false"
-        android:textColor="@color/login_form_details_medium"
-        android:background="@drawable/btn_bg"
-        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
-        app:layout_constraintStart_toStartOf="@+id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        />
-
     <TextView
-        android:id="@+id/forgot_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textSize="16sp"
-        android:text="@string/do_not_remember_password"
+        android:layout_width="366dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/et_bg"
+        android:text="Fill All Details For SignUp*"
+        android:backgroundTint="@color/colorPrimary"
+        android:textAlignment="center"
         android:textColor="@color/login_form_details"
-        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
-        app:layout_constraintStart_toStartOf="@+id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@+id/login" />
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/icon" />
+
 
     <View
         android:id="@+id/footer_line"
         android:layout_width="408dp"
         android:layout_height="1dp"
-        android:layout_marginTop="136dp"
         android:layout_marginBottom="50dp"
         android:background="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/forgot_password" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/sign_up"
@@ -130,17 +85,16 @@
         android:drawableStart="@drawable/facebook"
         android:drawablePadding="8dp"
         />
+
     <View
         android:id="@+id/line1"
         android:layout_width="120dp"
         android:layout_height="1dp"
         android:background="@color/login_form_details"
-        app:layout_constraintStart_toStartOf="@+id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@+id/forgot_password"
         app:layout_constraintBottom_toTopOf="@+id/facebook_login"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintEnd_toStartOf="@+id/or"
-        />
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left" />
 
     <TextView
         android:id="@+id/or"
@@ -168,4 +122,56 @@
         app:layout_constraintTop_toTopOf="@+id/or"
         app:layout_constraintVertical_bias="1.0" />
 
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="368dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="48dp"
+        android:autofillHints=""
+        android:background="@drawable/et_bg"
+        android:hint="Full Name"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:inputType="textAutoComplete"
+        android:padding="16dp"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/icon"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/date_of_birth"
+        android:layout_width="363dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/et_bg"
+        android:hint="Date of Birth(DD/MM/YY)"
+
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/login_form_details"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toTopOf="@+id/firstname" />
+
+    <LinearLayout
+        android:layout_width="358dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="68dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toTopOf="@+id/date_of_birth"
+        tools:layout_editor_absoluteX="24dp">
+
+
+
+    </LinearLayout>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
